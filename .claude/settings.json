@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/check-content.mjs\"",
+            "timeout": 30,
+            "statusMessage": "Content check…"
+          }
+        ]
+      }
+    ]
+  }
+}

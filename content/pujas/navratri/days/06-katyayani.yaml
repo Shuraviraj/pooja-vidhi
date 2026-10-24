@@ -1,0 +1,29 @@
+day: 6
+tithi: { hinglish: Shashthi, hi: षष्ठी }
+name: { hinglish: Maa Katyayani, hi: माँ कात्यायनी }
+stutiName: कात्यायनी
+color:
+  name: { hinglish: Green, hi: हरा }
+  hex: "#2E8B3A"
+  note: { hinglish: Hare kapde. Kala nahi., hi: हरे वस्त्र। काले नहीं। }
+bhog: { hinglish: 1 chammach shahad, hi: 1 चम्मच शहद }
+phool: { hinglish: Gende + jo bhi taaze phool mile, hi: गेंदे + जो भी ताज़े फूल मिलें }
+about:
+  hinglish: Rishi Katyayan ki putri — inhone Mahishasur ka vadh kiya. Sher par sawar, haath mein talwar aur kamal. Maana jaata hai ki shubh vivah ka aashirvaad deti hain.
+  hi: महर्षि कात्यायन की पुत्री — इन्होंने महिषासुर का वध किया। सिंह पर सवार, हाथ में तलवार और कमल। मान्यता है कि ये शुभ विवाह का आशीर्वाद देती हैं।
+mool: ॐ देवी कात्यायन्यै नमः ॥
+dhyan:
+  - चन्द्रहासोज्ज्वलकरा शार्दूलवरवाहना ।
+  - कात्यायनी शुभं दद्याद्देवी दानवघातिनी ॥
+aarti: aarti-katyayani
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

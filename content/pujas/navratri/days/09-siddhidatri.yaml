@@ -1,0 +1,29 @@
+day: 9
+tithi: { hinglish: Navami, hi: नवमी }
+name: { hinglish: Maa Siddhidatri, hi: माँ सिद्धिदात्री }
+stutiName: सिद्धिदात्री
+color:
+  name: { hinglish: Peacock Green, hi: मोरपंखी हरा }
+  hex: "#0F8A8A"
+  note: { hinglish: Peacock green (mor-pankhi). Kala nahi., hi: मोरपंखी हरे वस्त्र। काले नहीं। }
+bhog: { hinglish: 1–2 piece mithai, hi: 1–2 टुकड़े मिठाई }
+phool: { hinglish: Gende + jo bhi taaze phool mile, hi: गेंदे + जो भी ताज़े फूल मिलें }
+about:
+  hinglish: Sabhi siddhiyan dene wali Devi. Kamal par virajmaan, sher vahan; chaar haathon mein chakra, shankh, gada aur kamal. Navratri ki poornata inhi ki pooja se hoti hai.
+  hi: सभी सिद्धियाँ देने वाली देवी। कमल पर विराजमान, सिंह वाहन; चार हाथों में चक्र, शंख, गदा और कमल। नवरात्रि की पूर्णता इन्हीं की पूजा से होती है।
+mool: ॐ देवी सिद्धिदात्र्यै नमः ॥
+dhyan:
+  - सिद्धगन्धर्वयक्षाद्यैरसुरैरमरैरपि ।
+  - सेव्यमाना सदा भूयात् सिद्धिदा सिद्धिदायिनी ॥
+aarti: aarti-siddhidatri
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

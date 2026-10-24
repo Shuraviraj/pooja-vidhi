@@ -1,0 +1,15 @@
+{
+  "name": "Pooja Vidhi — नवरात्रि पूजा विधि",
+  "short_name": "Pooja Vidhi",
+  "description": "Navratri pooja vidhi, mantra aur aarti — bina ads",
+  "lang": "hi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8ec",
+  "theme_color": "#7b1e1e",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

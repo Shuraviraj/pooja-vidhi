@@ -1,0 +1,6 @@
+# Site ka live pata aur search (Google) ke liye description.
+# Repo ka naam badle ya custom domain lage to sirf `url` badlo — canonical, sitemap, share image sab isi se.
+url: https://shuraviraj.github.io/pooja-vidhi
+description:
+  hinglish: "Navratri ke 9 din ki poori pooja vidhi — har din ki Devi, mantra, aarti, bhog aur rang. Ghar par step-by-step, bina ads. Hinglish aur शुद्ध हिंदी mein."
+  hi: "नवरात्रि के नौ दिनों की पूरी पूजा विधि — हर दिन की देवी, मंत्र, आरती, भोग और रंग। घर पर क्रमवार, बिना विज्ञापन।"

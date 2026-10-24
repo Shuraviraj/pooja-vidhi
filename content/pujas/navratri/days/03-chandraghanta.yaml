@@ -1,0 +1,29 @@
+day: 3
+tithi: { hinglish: Tritiya, hi: तृतीया }
+name: { hinglish: Maa Chandraghanta, hi: माँ चंद्रघंटा }
+stutiName: चन्द्रघण्टा
+color:
+  name: { hinglish: Red, hi: लाल }
+  hex: "#C62828"
+  note: { hinglish: Laal ya maroon kapde. Kala nahi., hi: लाल या गहरे लाल वस्त्र। काले नहीं। }
+bhog: { hinglish: Ek katori doodh, hi: एक कटोरी दूध }
+phool: { hinglish: Gende + laal phool (gudhal/gulab mile to), hi: गेंदे + लाल फूल (गुड़हल/गुलाब मिलें तो) }
+about:
+  hinglish: Maathe par ghante ke aakar ka ardh-chandra — isliye naam Chandraghanta. Sher par sawar, das haathon mein astra. Shaanti aur veerta dono ki Devi.
+  hi: मस्तक पर घंटे के आकार का अर्धचंद्र — इसीलिए नाम चंद्रघंटा। सिंह पर सवार, दस हाथों में अस्त्र। शांति और वीरता दोनों की देवी।
+mool: ॐ देवी चन्द्रघण्टायै नमः ॥
+dhyan:
+  - पिण्डजप्रवरारूढा चण्डकोपास्त्रकैर्युता ।
+  - प्रसादं तनुते मह्यं चन्द्रघण्टेति विश्रुता ॥
+aarti: aarti-chandraghanta
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

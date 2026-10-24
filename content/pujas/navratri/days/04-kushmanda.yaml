@@ -1,0 +1,29 @@
+day: 4
+tithi: { hinglish: Chaturthi, hi: चतुर्थी }
+name: { hinglish: Maa Kushmanda, hi: माँ कूष्मांडा }
+stutiName: कूष्माण्डा
+color:
+  name: { hinglish: Royal Blue, hi: गहरा नीला }
+  hex: "#2747B8"
+  note: { hinglish: Gehra neela (royal blue). Kala nahi., hi: गहरे नीले वस्त्र। काले नहीं। }
+bhog: { hinglish: Roz wala hi, hi: रोज़ वाला ही }
+phool: { hinglish: Gende + jo bhi taaze phool mile, hi: गेंदे + जो भी ताज़े फूल मिलें }
+about:
+  hinglish: Maana jaata hai ki apni halki muskaan se inhone brahmand ki rachna ki. Aath bhujaayein (Ashtabhuja Devi), sher par sawar.
+  hi: मान्यता है कि अपनी मंद मुस्कान से इन्होंने ब्रह्मांड की रचना की। आठ भुजाएँ (अष्टभुजा देवी), सिंह पर सवार।
+mool: ॐ देवी कूष्माण्डायै नमः ॥
+dhyan:
+  - सुरासम्पूर्णकलशं रुधिराप्लुतमेव च ।
+  - दधाना हस्तपद्माभ्यां कूष्माण्डा शुभदास्तु मे ॥
+aarti: aarti-kushmanda
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

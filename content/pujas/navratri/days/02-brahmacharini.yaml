@@ -1,0 +1,29 @@
+day: 2
+tithi: { hinglish: Dwitiya, hi: द्वितीया }
+name: { hinglish: Maa Brahmacharini, hi: माँ ब्रह्मचारिणी }
+stutiName: ब्रह्मचारिणी
+color:
+  name: { hinglish: White, hi: सफ़ेद }
+  hex: "#F4F1EA"
+  note: { hinglish: Safed ya off-white kapde. Kala nahi., hi: सफ़ेद या हल्के क्रीम रंग के वस्त्र। काले नहीं। }
+bhog: { hinglish: Mishri zaroor, hi: मिश्री अवश्य }
+phool: { hinglish: Gende + safed phool (mogra/chameli mile to), hi: गेंदे + सफ़ेद फूल (मोगरा/चमेली मिलें तो) }
+about:
+  hinglish: Tapasya ki Devi — Shiv ji ko paane ke liye kathor tap kiya. Daayein haath mein jap-mala, baayein mein kamandal. Maana jaata hai ki inki pooja se dhairya aur sanyam milta hai.
+  hi: तपस्या की देवी — शिव जी को पाने के लिए कठोर तप किया। दाएँ हाथ में जप-माला, बाएँ में कमंडल। मान्यता है कि इनकी पूजा से धैर्य और संयम मिलता है।
+mool: ॐ देवी ब्रह्मचारिण्यै नमः ॥
+dhyan:
+  - दधाना करपद्माभ्यामक्षमालाकमण्डलू ।
+  - देवी प्रसीदतु मयि ब्रह्मचारिण्यनुत्तमा ॥
+aarti: aarti-brahmacharini
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

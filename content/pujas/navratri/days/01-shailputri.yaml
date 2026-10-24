@@ -1,0 +1,79 @@
+day: 1
+tithi: { hinglish: Pratipada, hi: प्रतिपदा }
+name: { hinglish: Maa Shailputri, hi: माँ शैलपुत्री }
+stutiName: शैलपुत्री
+color:
+  name: { hinglish: Orange, hi: नारंगी }
+  hex: "#F28C1E"
+  note: { hinglish: Orange / narangi kapde. Kala nahi., hi: नारंगी वस्त्र। काले नहीं। }
+bhog: { hinglish: 1 chammach gaay ka ghee + panchamrit, hi: 1 चम्मच गाय का घी + पंचामृत }
+phool: { hinglish: Gende + safed phool, hi: गेंदे + सफ़ेद फूल }
+about:
+  hinglish: Parvat-raj Himalaya ki putri — pichhle janam mein Sati. Nandi (bail) par sawar, daayein haath mein trishul, baayein mein kamal. Navratri ki shuruaat inhi ki pooja se hoti hai.
+  hi: पर्वतराज हिमालय की पुत्री — पूर्व जन्म में सती। नंदी (बैल) पर सवार, दाएँ हाथ में त्रिशूल, बाएँ में कमल। नवरात्रि का आरंभ इन्हीं की पूजा से होता है।
+mool: ॐ देवी शैलपुत्र्यै नमः ॥
+dhyan:
+  - वन्दे वाञ्छितलाभाय चन्द्रार्धकृतशेखराम् ।
+  - वृषारूढां शूलधरां शैलपुत्रीं यशस्विनीम् ॥
+aarti: aarti-shailputri
+taiyari: false
+alert:
+  hinglish: "Aaj sthapana ka din hai. Snan aur shringar sirf aaj hote hain; kal se murti ko na chhuein, na hilayein."
+  hi: "आज स्थापना का दिन है। स्नान और श्रृंगार केवल आज होते हैं; कल से मूर्ति को न छुएँ, न हिलाएँ।"
+
+steps:
+  - title: { hinglish: Sthapana, hi: स्थापना }
+    body:
+      hinglish: Chowki par laal kapda, beech mein plate par Durga Maa. Bagal mein paan ke patte par roli ka swastik, uspar ek supari — yahi Ganesh ji hain.
+      hi: चौकी पर लाल कपड़ा, बीच में थाली पर दुर्गा माँ। बगल में पान के पत्ते पर रोली का स्वस्तिक, उस पर एक सुपारी — यही गणेश जी हैं।
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - title: { hinglish: Sankalp, hi: संकल्प }
+    tag: { hinglish: sirf aaj, hi: केवल आज }
+    body:
+      hinglish: "Daayein haath mein jal, akshat aur ek phool lekar bolein; phir jal thali mein chhod dein:"
+      hi: "दाएँ हाथ में जल, अक्षत और एक फूल लेकर बोलें; फिर जल थाली में छोड़ दें:"
+    blocks:
+      - mantra: sankalp
+  - title: { hinglish: Dhyan, hi: ध्यान }
+    body:
+      hinglish: "Haath mein ek phool lekar aankhein band karein aur Maa ka dhyan karein:"
+      hi: "हाथ में एक फूल लेकर आँखें बंद करें और माँ का ध्यान करें:"
+    blocks:
+      - mantra: $dhyan
+      - label: { hinglish: "Phir phool charnon mein rakhte hue bolein:", hi: "फिर फूल चरणों में रखते हुए बोलें:" }
+      - mantra: avahan
+  - title: { hinglish: Snan, hi: स्नान }
+    tag: { hinglish: sirf aaj, hi: केवल आज }
+    body: { hinglish: "Murti plate mein hi rahe:", hi: "मूर्ति थाली में ही रहे:" }
+    blocks:
+      - table:
+          - { a: { hinglish: Thoda jal (Gangajal mila), hi: थोड़ा जल (गंगाजल मिला) }, m: स्नानं समर्पयामि }
+          - { a: { hinglish: 2–3 chammach panchamrit, hi: 2–3 चम्मच पंचामृत }, m: पञ्चामृतस्नानं समर्पयामि }
+          - { a: { hinglish: Phir saaf jal, hi: फिर स्वच्छ जल }, m: शुद्धोदकस्नानं समर्पयामि }
+    note:
+      hinglish: "Saaf kapde se pochh kar murti wapas plate par. Panchamrit: doodh 5 chammach, dahi 2, ghee 1, shahad 1, mishri/gud 1 + kuch boond Gangajal. Mitti/plaster ki murti ho to sirf jal ke chheente."
+      hi: "स्वच्छ कपड़े से पोंछकर मूर्ति वापस थाली पर। पंचामृत: दूध 5 चम्मच, दही 2, घी 1, शहद 1, मिश्री/गुड़ 1 + कुछ बूँद गंगाजल। मिट्टी या प्लास्टर की मूर्ति हो तो केवल जल के छींटे।"
+  - title: { hinglish: Vastra aur shringar, hi: वस्त्र और श्रृंगार }
+    tag: { hinglish: sirf aaj, hi: केवल आज }
+    blocks:
+      - table:
+          - { a: { hinglish: Chunri / laal kapda / moli, hi: चुनरी / लाल वस्त्र / मौली }, m: वस्त्रं समर्पयामि }
+          - a: { hinglish: "Sindoor, bindi, mala", hi: "सिंदूर, बिंदी, माला" }
+            m: सौभाग्यद्रव्याणि समर्पयामि
+  - use: pooja
+  - title: { hinglish: Paan-supari aur dakshina, hi: पान-सुपारी और दक्षिणा }
+    body:
+      hinglish: "Paan ke patte par 1 supari aur ₹1 rakhein:"
+      hi: "पान के पत्ते पर 1 सुपारी और ₹1 रखें:"
+    blocks:
+      - mantra: tambool
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam
+    note:
+      hinglish: Panchamrit (charanamrit) thoda sa lein; ghee khaane mein use kar lein.
+      hi: पंचामृत (चरणामृत) थोड़ा ग्रहण करें; घी भोजन में उपयोग कर लें।

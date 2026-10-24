@@ -1,0 +1,63 @@
+day: 7
+tithi: { hinglish: Saptami, hi: सप्तमी }
+name: { hinglish: Maa Kalaratri, hi: माँ कालरात्रि }
+stutiName: कालरात्रि
+color:
+  name: { hinglish: Grey, hi: स्लेटी }
+  hex: "#808080"
+  note: { hinglish: Grey (halka ya medium). Kala nahi., hi: हल्के या मध्यम स्लेटी वस्त्र। काले नहीं। }
+bhog: { hinglish: Gud ka chhota tukda, hi: गुड़ का छोटा टुकड़ा }
+phool: { hinglish: Gende + jo bhi taaze phool mile, hi: गेंदे + जो भी ताज़े फूल मिलें }
+about:
+  hinglish: Shyam varn, ugra roop, gadhe par sawar. Andhkaar aur bhay ka naash karti hain, phir bhi hamesha shubh phal deti hain — isliye 'Shubhankari' bhi kehlati hain.
+  hi: श्याम वर्ण, उग्र रूप, गर्दभ (गधे) पर सवार। अंधकार और भय का नाश करती हैं, फिर भी सदा शुभ फल देती हैं — इसीलिए ‘शुभंकरी’ भी कहलाती हैं।
+mool: ॐ देवी कालरात्र्यै नमः ॥
+dhyan:
+  - एकवेणी जपाकर्णपूरा नग्ना खरास्थिता ।
+  - लम्बोष्ठी कर्णिकाकर्णी तैलाभ्यक्तशरीरिणी ॥
+  - वामपादोल्लसल्लोहलताकण्टकभूषणा ।
+  - वर्धनमूर्धध्वजा कृष्णा कालरात्रिर्भयङ्करी ॥
+aarti: aarti-kalaratri
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap-chhota
+  - title: { hinglish: Durga Saptashati ka paath, hi: श्री दुर्गा सप्तशती का पाठ }
+    body:
+      hinglish: Poora paath (13 adhyay) kitaab se — lagbhag 2–3 ghante, isliye shaam jaldi shuru karein. Gita Press, Gorakhpur ki Shri Durga Saptashati (Hindi arth sahit) mein poori vidhi di hoti hai.
+      hi: संपूर्ण पाठ (13 अध्याय) पुस्तक से — लगभग 2–3 घंटे, अतः संध्या को जल्दी आरंभ करें। गीता प्रेस, गोरखपुर की श्री दुर्गा सप्तशती (हिंदी अर्थ सहित) में पूरी विधि दी होती है।
+    blocks:
+      - label: { hinglish: "Paath se pehle:", hi: "पाठ से पहले:" }
+      - list:
+          - hinglish: Kitaab ko chowki ya kisi saaf kapde/stand par rakhein — haath mein ya god mein lekar nahi.
+            hi: पुस्तक को चौकी या किसी स्वच्छ वस्त्र/आसन पर रखें — हाथ में या गोद में लेकर नहीं।
+          - hinglish: Kitaab par roli, akshat aur phool chadhakar pranaam karein.
+            hi: पुस्तक पर रोली, अक्षत और फूल चढ़ाकर प्रणाम करें।
+          - hinglish: "Daayein haath mein jal, akshat, phool lekar paath ka sankalp:"
+            hi: "दाएँ हाथ में जल, अक्षत, फूल लेकर पाठ का संकल्प:"
+      - mantra: saptashati-sankalp
+      - label: { hinglish: Paath ka kram, hi: पाठ का क्रम }
+      - ordered:
+          - { hinglish: Devi Kavach, hi: देवी कवच }
+          - { hinglish: Argala Stotra, hi: अर्गला स्तोत्र }
+          - { hinglish: Keelak, hi: कीलक }
+          - { hinglish: (Kitaab mein diye hon to) Ratri Suktam aur Navarna vidhi, hi: (पुस्तक में दिए हों तो) रात्रि सूक्त और नवार्ण विधि }
+          - { hinglish: "Adhyay 1 — Pratham charitra: Madhu-Kaitabh vadh", hi: "अध्याय 1 — प्रथम चरित्र: मधु-कैटभ वध" }
+          - { hinglish: "Adhyay 2–4 — Madhyam charitra: Mahishasur vadh", hi: "अध्याय 2–4 — मध्यम चरित्र: महिषासुर वध" }
+          - { hinglish: "Adhyay 5–13 — Uttam charitra: Shumbh-Nishumbh vadh aur Devi ka vardaan", hi: "अध्याय 5–13 — उत्तम चरित्र: शुम्भ-निशुम्भ वध और देवी का वरदान" }
+          - { hinglish: (Kitaab mein diye hon to) Devi Suktam aur teen Rahasya, hi: (पुस्तक में दिए हों तो) देवी सूक्त और तीनों रहस्य }
+          - hinglish: Kitaab ki kshama prarthana; chahein to Siddha Kunjika Stotra
+            hi: पुस्तक की क्षमा प्रार्थना; चाहें तो सिद्ध कुंजिका स्तोत्र
+      - p:
+          hinglish: Ek hi aasan par, saaf aur spasht awaaz mein padhein — bahut tez nahi. Adhyay ke beech mein na uthein; rukna pade to adhyay poora karke.
+          hi: एक ही आसन पर, स्पष्ट उच्चारण से पढ़ें — बहुत तेज़ नहीं। अध्याय के बीच में न उठें; रुकना पड़े तो अध्याय पूरा करके।
+    note:
+      hinglish: "Paath poora hone ke baad: aarti, pushpanjali, kshama prarthana aur pranaam."
+      hi: "पाठ पूरा होने के बाद: आरती, पुष्पांजलि, क्षमा प्रार्थना और प्रणाम।"
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

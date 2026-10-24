@@ -1,0 +1,109 @@
+# Roz ke common steps — ek hi baar likhe hain. Din ki file mein `- use: shuddhi`
+# likhne se yahan wala step aa jaata hai. $mool / $dhyan / $stuti / $aarti
+# us din ki file se bharte hain.
+
+taiyari:
+  title: { hinglish: "Taiyari (10 min)", hi: "तैयारी (10 मिनट)" }
+  list:
+    - hinglish: Haath-pair dhokar aaj ke rang ke kapde pehnein.
+      hi: हाथ-पैर धोकर आज के रंग के वस्त्र पहनें।
+    - hinglish: Charnon se kal ke phool hatayein. Pehle din ki mala aur shringar na chhedein; murti ko na chhuein, na hilayein.
+      hi: चरणों से कल के फूल हटाएँ। पहले दिन की माला और श्रृंगार न छेड़ें; मूर्ति को न छुएँ, न हिलाएँ।
+    - hinglish: Teeno thaliyan saja lein — pooja, aarti aur bhog.
+      hi: तीनों थालियाँ सजा लें — पूजा, आरती और भोग।
+
+after:
+  hinglish: "Pooja ke baad: ghar par hain to diya jalne dein; bahar jaana ho to bujha dein (phoonk se nahi). Dhoopdaani ke angaare khud bujhne dein."
+  hi: "पूजा के बाद: घर पर हैं तो दीया जलने दें; बाहर जाना हो तो बुझा दें (फूँक से नहीं)। धूपदानी के अंगारे स्वयं बुझने दें।"
+
+steps:
+  diya:
+    title: { hinglish: Diya aur agarbatti jalayein., hi: दीया और अगरबत्ती जलाएँ। }
+    body: { hinglish: Diye ko haath jodkar pranaam karein., hi: दीये को हाथ जोड़कर प्रणाम करें। }
+
+  shuddhi:
+    title: { hinglish: Shuddhi, hi: शुद्धि }
+    body:
+      hinglish: "Lote ke jal mein thoda Gangajal milayein; ek phool se apne upar, aasan aur samagri par chheente dein:"
+      hi: "लोटे के जल में थोड़ा गंगाजल मिलाएँ; एक फूल से अपने ऊपर, आसन और सामग्री पर छींटे दें:"
+    blocks:
+      - mantra: shuddhi
+
+  ganesh:
+    title: { hinglish: Ganesh ji, hi: गणेश जी }
+    body:
+      hinglish: "Supari wale Ganesh ji ko thode akshat aur ek phool chadhayein:"
+      hi: "सुपारी वाले गणेश जी को थोड़े अक्षत और एक फूल चढ़ाएँ:"
+    blocks:
+      - mantra: ganesh
+
+  dhyan:
+    title: { hinglish: Dhyan, hi: ध्यान }
+    body:
+      hinglish: "Haath mein ek phool lekar aankhein band karein aur bolein; phir phool Mata ke charnon mein rakhein:"
+      hi: "हाथ में एक फूल लेकर आँखें बंद करें और बोलें; फिर फूल माता के चरणों में रखें:"
+    blocks:
+      - mantra: $dhyan
+
+  pooja:
+    title: { hinglish: Pooja — murti ko chhue bina., hi: पूजा — मूर्ति को छुए बिना। }
+    body:
+      hinglish: "Har cheez chadhane se pehle ye mantra bolein:"
+      hi: "हर वस्तु अर्पित करने से पहले यह मंत्र बोलें:"
+    blocks:
+      - mantra: $mool
+      - label: { hinglish: "Phir:", hi: "फिर:" }
+      - table:
+          - { a: { hinglish: Roli-akshat charnon mein, hi: रोली-अक्षत चरणों में }, m: गन्धाक्षतान् समर्पयामि }
+          - { a: { hinglish: Naye phool charnon mein, hi: नए फूल चरणों में }, m: पुष्पाणि समर्पयामि }
+          - { a: { hinglish: Agarbatti / dhoop dikhayein, hi: अगरबत्ती / धूप दिखाएँ }, m: धूपम् आघ्रापयामि }
+          - { a: { hinglish: Diya dikhayein, hi: दीया दिखाएँ }, m: दीपं दर्शयामि }
+          - { a: { hinglish: Bhog aur jal saamne rakhein, hi: भोग और जल सामने रखें }, m: नैवेद्यं निवेदयामि }
+
+  jaap:
+    title: { hinglish: Jaap, hi: जाप }
+    blocks:
+      - label: { hinglish: "Mool mantra 108 baar (time kam ho to 11 baar):", hi: "मूल मंत्र 108 बार (समय कम हो तो 11 बार):" }
+      - mantra: $mool
+        big: true
+      - label: { hinglish: "Stuti — 3 baar:", hi: "स्तुति — 3 बार:" }
+      - mantra: $stuti
+      - label: { hinglish: "Durga stuti — 1 baar:", hi: "दुर्गा स्तुति — 1 बार:" }
+      - mantra: sarvamangal
+
+  jaap-chhota:
+    title: { hinglish: Jaap, hi: जाप }
+    blocks:
+      - label: { hinglish: "Mool mantra 11 baar (aaj paath lamba hai):", hi: "मूल मंत्र 11 बार (आज पाठ लंबा है):" }
+      - mantra: $mool
+        big: true
+      - label: { hinglish: "Stuti — 3 baar:", hi: "स्तुति — 3 बार:" }
+      - mantra: $stuti
+
+  aarti:
+    title: { hinglish: "Aarti — is kram mein:", hi: "आरती — इस क्रम में:" }
+    blocks:
+      - aartis: [aarti-ganesh, $aarti, aarti-ambe]
+    note:
+      hinglish: "Thali clockwise: 4 baar charan, 2 baar naabhi, 1 baar mukh, 7 baar poora roop."
+      hi: "थाली दक्षिणावर्त: 4 बार चरण, 2 बार नाभि, 1 बार मुख, 7 बार पूरा स्वरूप।"
+
+  pushpanjali:
+    title: { hinglish: Pushpanjali, hi: पुष्पांजलि }
+    body:
+      hinglish: "Khade hokar dono haathon mein phool lekar bolein, phir phool Mata ke charnon mein:"
+      hi: "खड़े होकर दोनों हाथों में फूल लेकर बोलें, फिर फूल माता के चरणों में:"
+    blocks:
+      - mantra: pushpanjali
+
+  kshama:
+    title: { hinglish: Kshama prarthana, hi: क्षमा प्रार्थना }
+    body: { hinglish: "Haath jodkar:", hi: "हाथ जोड़कर:" }
+    blocks:
+      - mantra: kshama
+
+  pranaam:
+    title: { hinglish: Pranaam aur prasad, hi: प्रणाम और प्रसाद }
+    body:
+      hinglish: Apni jagah par 3 baar clockwise ghoomkar pranaam karein. Bhog prasad ke roop mein ghar mein baant kar khayein.
+      hi: अपने स्थान पर तीन बार दक्षिणावर्त घूमकर प्रणाम करें। भोग प्रसाद के रूप में घर में बाँटकर ग्रहण करें।

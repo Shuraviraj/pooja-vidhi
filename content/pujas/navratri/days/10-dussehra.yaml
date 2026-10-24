@@ -1,0 +1,52 @@
+day: 10
+tithi: { hinglish: Dashami, hi: दशमी }
+name: { hinglish: Vijayadashami · Dussehra, hi: विजयादशमी · दशहरा }
+color:
+  name: { hinglish: "—", hi: "—" }
+  hex: "#C49A2C"
+bhog: { hinglish: 1–2 piece mithai + fal + jal, hi: 1–2 टुकड़े मिठाई + फल + जल }
+about:
+  hinglish: Burai par achchhai ki jeet ka din. Aaj naun din ki pooja ka samapan hota hai — Mata ko dhanyavaad dekar aur unka aashirvaad maangkar.
+  hi: बुराई पर अच्छाई की विजय का दिन। आज नौ दिनों की पूजा का समापन होता है — माता को धन्यवाद देकर और उनका आशीर्वाद माँगकर।
+mool: ॐ दुर्गायै नमः ॥
+taiyari: false
+after: false
+steps:
+  - title: { hinglish: "Diya, agarbatti aur dhoop jalayein.", hi: "दीया, अगरबत्ती और धूप जलाएँ।" }
+  - title: { hinglish: Shuddhi aur Ganesh ji, hi: शुद्धि और गणेश जी }
+    body:
+      hinglish: "Jal ke chheente, phir Ganesh ji ko akshat aur phool:"
+      hi: "जल के छींटे, फिर गणेश जी को अक्षत और फूल:"
+    blocks:
+      - mantra: ganesh-beej
+  - use: pooja
+  - title: { hinglish: Durga stuti — 3 baar, hi: दुर्गा स्तुति — 3 बार }
+    blocks:
+      - mantra: sarvamangal
+  - title: { hinglish: Aarti, hi: आरती }
+    body:
+      hinglish: Ganesh ji ki aarti, phir Durga ji ki aarti (Jai Ambe Gauri).
+      hi: गणेश जी की आरती, फिर दुर्गा जी की आरती (जय अम्बे गौरी)।
+    blocks:
+      - aartis: [aarti-ganesh, aarti-ambe]
+  - title: { hinglish: Pushpanjali, hi: पुष्पांजलि }
+    body: { hinglish: "Dono haathon mein phool lekar:", hi: "दोनों हाथों में फूल लेकर:" }
+    blocks:
+      - mantra: pushpanjali
+  - title: { hinglish: Kshama prarthana, hi: क्षमा प्रार्थना }
+    blocks:
+      - mantra: kshama
+      - label: { hinglish: "Phir haath jodkar:", hi: "फिर हाथ जोड़कर:" }
+      - mantra: samapan-prarthana
+  - title: { hinglish: "Samapan — pooja ke baad hi:", hi: "समापन — पूजा के बाद ही:" }
+    blocks:
+      - list:
+          - hinglish: Ab murti ko dheere se uthakar ghar ke mandir mein rakh dein. Supari wale Ganesh ji ko bhi mandir mein rakh lein.
+            hi: अब मूर्ति को धीरे से उठाकर घर के मंदिर में रख दें। सुपारी वाले गणेश जी को भी मंदिर में रख लें।
+          - hinglish: Purane phool aur paan ke patte gamle ya ped ki mitti mein; bache akshat chidiyon ko.
+            hi: पुराने फूल और पान के पत्ते गमले या पेड़ की मिट्टी में; बचे अक्षत पक्षियों को।
+          - hinglish: ₹1 dakshina kisi mandir mein ya zaroorat-mand ko de dein.
+            hi: ₹1 दक्षिणा किसी मंदिर में या ज़रूरतमंद को दे दें।
+          - hinglish: Laal kapda dhokar agli pooja ke liye rakh lein.
+            hi: लाल कपड़ा धोकर अगली पूजा के लिए रख लें।
+closing: [sarvamangal, jai-mata-di]

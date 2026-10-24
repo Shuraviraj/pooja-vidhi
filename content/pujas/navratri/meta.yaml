@@ -1,0 +1,212 @@
+slug: navratri
+status: draft
+title: { hinglish: Navratri Pooja Vidhi, hi: नवरात्रि पूजा विधि }
+subtitle: { hinglish: "Naun din · Maa Durga ke naun roop", hi: "नौ दिन · माँ दुर्गा के नौ रूप" }
+when:
+  hinglish: Ghar par shaam ki pooja — har din ki poori vidhi
+  hi: घर पर संध्या की पूजा — हर दिन की पूरी विधि
+pdf:
+  hinglish: pdf/Navratri_Pooja_Vidhi_9_Din_Hinglish.pdf
+  hi: pdf/Navratri_Pooja_Vidhi_9_Din_Shuddh_Hindi.pdf
+cover: [ya-devi]
+
+glance:
+  - { hinglish: Diya, hi: दीया }
+  - { hinglish: Shuddhi, hi: शुद्धि }
+  - { hinglish: Ganesh ji, hi: गणेश जी }
+  - { hinglish: Dhyan, hi: ध्यान }
+  - { hinglish: Pooja, hi: पूजा }
+  - { hinglish: Jaap, hi: जाप }
+  - { hinglish: Aarti, hi: आरती }
+  - { hinglish: Pushpanjali, hi: पुष्पांजलि }
+  - { hinglish: Kshama, hi: क्षमा }
+  - { hinglish: "Pranaam, prasad", hi: "प्रणाम, प्रसाद" }
+
+chartNote:
+  hinglish: "Roz wala bhog: mishri ya kishmish + ek fal (kela/seb/jo ghar mein ho) + ek glass jal. Table mein us din ka extra."
+  hi: "रोज़ का भोग: मिश्री या किशमिश + एक फल (केला/सेब/जो घर में हो) + एक गिलास जल। तालिका में उस दिन का अतिरिक्त भोग।"
+chartFooter:
+  - hinglish: Us din ke rang ke kapde pehnna shubh maana jaata hai — zaroori nahi. Pooja mein kale kapde na pehnein.
+    hi: उस दिन के रंग के वस्त्र पहनना शुभ माना जाता है — अनिवार्य नहीं। पूजा में काले वस्त्र न पहनें।
+  - hinglish: Rang aur bhog parampara ke hisaab se thode alag ho sakte hain — ye sabse zyada follow kiye jaane wale hain.
+    hi: रंग और भोग परंपरा के अनुसार थोड़े भिन्न हो सकते हैं — ये सबसे अधिक प्रचलित हैं।
+
+sections:
+  - id: chowki
+    title: { hinglish: Chowki kaise lagi hai, hi: चौकी की सजावट }
+    subtitle:
+      hinglish: Pehle din jaisi chowki lagi hai — naun din yahi rahegi
+      hi: पहले दिन जैसी चौकी सजी है — नौ दिन यही रहेगी
+    blocks:
+      # Chowki upar se aisi dikhti hai (aap neeche baithe ho). x, y = jagah %, size = tasveer ki chaudai %.
+      - plate:
+          style: cloth
+          caption: { hinglish: Chowki — laal kapde par, hi: चौकी — लाल कपड़े पर }
+          items:
+            - { art: ganesh, x: 22, y: 36, size: 23, name: { hinglish: Ganesh ji, hi: गणेश जी }, note: { hinglish: paan + supari, hi: पान + सुपारी } }
+            - { art: durga, x: 50, y: 30, size: 30, name: { hinglish: Durga Maa, hi: दुर्गा माँ }, note: { hinglish: plate mein murti, hi: थाली में मूर्ति } }
+            - { art: phool, x: 78, y: 36, size: 22, name: { hinglish: Phool, hi: फूल } }
+            - { art: diya, x: 28, y: 71, size: 22, name: { hinglish: Ghee diya, hi: घी का दीया } }
+            - { art: bhog, x: 50, y: 74, size: 20, name: { hinglish: Bhog, hi: भोग } }
+            - { art: agarbatti, x: 72, y: 71, size: 22, name: { hinglish: Agarbatti, hi: अगरबत्ती } }
+          besideLabel: { hinglish: Zameen par — chowki ke saamne, hi: ज़मीन पर — चौकी के सामने }
+          beside:
+            - { art: thali, name: { hinglish: Pooja thali, hi: पूजा की थाली }, note: { hinglish: aapke saamne, hi: आपके सामने } }
+            - { art: dhoopdaani, name: { hinglish: Dhoopdaani, hi: धूपदानी }, note: { hinglish: steel plate par, hi: धातु की थाली पर } }
+            - { art: aasan, name: { hinglish: Aap (aasan par), hi: आप (आसन पर) }, note: { hinglish: mukh East/North, hi: मुख पूर्व/उत्तर } }
+      - list:
+          - hinglish: Chowki par laal kapda, beech mein plate par Durga Maa ki murti.
+            hi: चौकी पर लाल कपड़ा, बीच में थाली पर दुर्गा माँ की मूर्ति।
+          - hinglish: "Ganesh ji: paan ke patte par roli ka swastik, uspar ek supari — Mata ke bagal mein."
+            hi: "गणेश जी: पान के पत्ते पर रोली का स्वस्तिक, उस पर एक सुपारी — माता के बगल में।"
+          - hinglish: Ghee ka diya aapke baayein haath ki taraf (Mata ke daayein).
+            hi: घी का दीया आपके बाएँ हाथ की ओर (माता के दाईं ओर)।
+          - hinglish: Agarbatti aapke daayein; bhog Mata ke saamne.
+            hi: अगरबत्ती आपके दाएँ; भोग माता के सामने।
+          - hinglish: Dhoopdaani zameen par, steel plate ke upar — chowki aur kapde se door.
+            hi: धूपदानी ज़मीन पर, धातु की थाली के ऊपर — चौकी और कपड़े से दूर।
+          - hinglish: Pooja thali aapke saamne; aap aasan par, mukh East ya North.
+            hi: पूजा की थाली आपके सामने; आप आसन पर, मुख पूर्व या उत्तर की ओर।
+      - callout:
+          hinglish: Pehle din sthapana aur shringar ho chuka hai. Dussehra tak murti aur Ganesh ji ko na chhuein, na hilayein — roz sirf pooja.
+          hi: पहले दिन स्थापना और श्रृंगार हो चुका है। दशहरे तक मूर्ति और गणेश जी को न छुएँ, न हिलाएँ — रोज़ केवल पूजा।
+        title: { hinglish: Dhyan rahe, hi: ध्यान रहे }
+        tone: warn
+      - p:
+          hinglish: "Swastik: roli mein 2 boond paani milakar anamika ungli (ring finger) se — chaaron konon mein ek-ek bindu."
+          hi: "स्वस्तिक: रोली में दो बूँद पानी मिलाकर अनामिका उँगली से — चारों कोनों में एक-एक बिंदु।"
+
+  - id: thali
+    title: { hinglish: Thaliyan kaise sajayein, hi: थालियाँ कैसे सजाएँ }
+    subtitle:
+      hinglish: Roz pooja se pehle ye teen thaliyan taiyaar kar lein
+      hi: रोज़ पूजा से पहले ये तीन थालियाँ तैयार कर लें
+    blocks:
+      - cards:
+          - title: { hinglish: Pooja thali, hi: पूजा की थाली }
+            body:
+              hinglish: Roli, akshat, naye phool, kapoor, maachis aur agarbatti. Bagal mein jal ka lota aur ek chammach. Har cheez yahin se uthakar chadhayein.
+              hi: रोली, अक्षत, नए फूल, कपूर, माचिस और अगरबत्ती। बगल में जल का लोटा और एक चम्मच। हर वस्तु यहीं से उठाकर चढ़ाएँ।
+            plate:
+              style: brass
+              items:
+                - { art: phool, x: 50, y: 50, size: 24, name: { hinglish: Phool, hi: फूल } }
+                - { art: akshat, x: 50, y: 20, size: 20, name: { hinglish: Akshat (chawal), hi: अक्षत } }
+                - { art: roli, x: 78.5, y: 41, size: 20, name: { hinglish: Roli, hi: रोली } }
+                - { art: kapoor, x: 68, y: 74, size: 20, name: { hinglish: Kapoor, hi: कपूर } }
+                - { art: maachis, x: 32, y: 74, size: 20, name: { hinglish: Maachis, hi: माचिस } }
+                - { art: agarbatti, x: 21.5, y: 41, size: 20, name: { hinglish: Agarbatti, hi: अगरबत्ती } }
+              besideLabel: { hinglish: Bagal mein, hi: बगल में }
+              beside:
+                - { art: lota, name: { hinglish: Jal ka lota, hi: जल का लोटा } }
+                - { art: chammach, name: { hinglish: Chammach, hi: चम्मच } }
+          - title: { hinglish: Aarti thali, hi: आरती की थाली }
+            body:
+              hinglish: Beech mein ghee ka diya (ya kapoor), saath mein thode phool, akshat aur roli. Ghanti ho to bagal mein. Diya ya kapoor aarti se theek pehle jalayein.
+              hi: बीच में घी का दीया (या कपूर), साथ में थोड़े फूल, अक्षत और रोली। घंटी हो तो बगल में। दीया या कपूर आरती से ठीक पहले जलाएँ।
+            plate:
+              style: brass
+              items:
+                - { art: diya, x: 50, y: 50, size: 30, name: { hinglish: Ghee diya, hi: घी का दीया }, note: { hinglish: ya kapoor, hi: या कपूर } }
+                - { art: phool, x: 50, y: 17, size: 22, name: { hinglish: Phool, hi: फूल } }
+                - { art: akshat, x: 23, y: 66, size: 20, name: { hinglish: Akshat, hi: अक्षत } }
+                - { art: roli, x: 77, y: 66, size: 20, name: { hinglish: Roli, hi: रोली } }
+              besideLabel: { hinglish: Bagal mein, hi: बगल में }
+              beside:
+                - { art: ghanti, name: { hinglish: Ghanti, hi: घंटी }, note: { hinglish: ho to, hi: हो तो } }
+          - title: { hinglish: Bhog ki plate, hi: भोग की थाली }
+            body:
+              hinglish: Mishri ya kishmish ki katori, ek fal (kela/seb), aur us din ka extra bhog. Saath mein ek glass jal. Pooja ke baad yahi prasad hai.
+              hi: मिश्री या किशमिश की कटोरी, एक फल (केला/सेब), और उस दिन का अतिरिक्त भोग। साथ में एक गिलास जल। पूजा के बाद यही प्रसाद है।
+            plate:
+              style: brass
+              items:
+                - { art: mishri, x: 50, y: 28, size: 26, name: { hinglish: Mishri ya kishmish, hi: मिश्री या किशमिश } }
+                - { art: fal, x: 29, y: 66, size: 26, name: { hinglish: "Fal (kela/seb)", hi: "फल (केला/सेब)" } }
+                - { art: bhog, x: 71, y: 66, size: 24, name: { hinglish: Us din ka bhog, hi: उस दिन का भोग } }
+              besideLabel: { hinglish: Saath mein, hi: साथ में }
+              beside:
+                - { art: glass, name: { hinglish: Ek glass jal, hi: एक गिलास जल } }
+
+  - id: niyam
+    title: { hinglish: Roz ke niyam aur shaam ka time-table, hi: रोज़ के नियम और संध्या की समय-सारिणी }
+    subtitle: { hinglish: Naun din ke liye — ek baar padh lein, hi: नौ दिनों के लिए — एक बार पढ़ लें }
+    blocks:
+      - label: { hinglish: Shaam ka 1 ghanta, hi: संध्या का एक घंटा }
+      - timetable:
+          - { time: "0–10", text: { hinglish: "Safai, kal ke phool hatana, teeno thaliyan sajana", hi: "सफ़ाई, कल के फूल हटाना, तीनों थालियाँ सजाना" } }
+          - { time: "10–20", text: { hinglish: "Diya, shuddhi, Ganesh ji, dhyan", hi: "दीया, शुद्धि, गणेश जी, ध्यान" } }
+          - { time: "20–30", text: { hinglish: "Roli-akshat, phool, dhoop, deep, bhog", hi: "रोली-अक्षत, फूल, धूप, दीप, भोग" } }
+          - { time: "30–45", text: { hinglish: Jaap aur stuti, hi: जाप और स्तुति } }
+          - { time: "45–55", text: { hinglish: Aarti, hi: आरती } }
+          - { time: "55–60", text: { hinglish: "Pushpanjali, kshama prarthana, pranaam, prasad", hi: "पुष्पांजलि, क्षमा प्रार्थना, प्रणाम, प्रसाद" } }
+      - p:
+          hinglish: "Subah: kuch zaroori nahi — chahein to nahakar sirf haath jodkar pranaam kar lein."
+          hi: "सुबह: कुछ अनिवार्य नहीं — चाहें तो स्नान करके केवल हाथ जोड़कर प्रणाम कर लें।"
+      - label: { hinglish: Kya karein, hi: क्या करें }
+      - list:
+          - { hinglish: Roz shaam diya jalayein., hi: रोज़ संध्या को दीया जलाएँ। }
+          - { hinglish: Pooja ki jagah saaf rakhein., hi: पूजा का स्थान स्वच्छ रखें। }
+          - { hinglish: Jitna ho sake satvik khana — bina pyaaz-lahsun., hi: जितना हो सके सात्त्विक भोजन — बिना प्याज़-लहसुन। }
+          - { hinglish: Vrat zaroori nahi — sehat aur kaam ke hisaab se., hi: व्रत अनिवार्य नहीं — स्वास्थ्य और काम के अनुसार। }
+          - { hinglish: Pooja ke time phone silent., hi: पूजा के समय फ़ोन बंद या मौन रखें। }
+      - label: { hinglish: Kya na karein, hi: क्या न करें }
+      - list:
+          - hinglish: Dussehra tak murti ko na chhuein, na hilayein.
+            hi: दशहरे तक मूर्ति को न छुएँ, न हिलाएँ।
+          - hinglish: Non-veg, sharab, tambaku — naun din nahi.
+            hi: मांसाहार, मदिरा, तंबाकू — नौ दिन नहीं।
+          - { hinglish: Pooja mein kale kapde nahi., hi: पूजा में काले वस्त्र नहीं। }
+          - hinglish: Diya ya dhoopdaani akela jalta na chhodein; phoonk se na bujhayein.
+            hi: दीया या धूपदानी को अकेला जलता न छोड़ें; फूँक मारकर न बुझाएँ।
+          - { hinglish: Murjhaye phool aur tulsi Mata ko nahi., hi: मुरझाए फूल और तुलसी माता को नहीं। }
+      - callout:
+          hinglish: Ghar par hain to diya jalne dein; bahar jaana ho to bujha dein (phoonk se nahi). Dhoopdaani ke angaare khud bujhne dein. Bhog prasad ke roop mein ghar mein baant kar khayein.
+          hi: घर पर हैं तो दीया जलने दें; बाहर जाना हो तो बुझा दें (फूँक से नहीं)। धूपदानी के अंगारे स्वयं बुझने दें। भोग प्रसाद के रूप में घर में बाँटकर ग्रहण करें।
+        title: { hinglish: Pooja ke baad, hi: पूजा के बाद }
+        tone: ok
+
+  - id: vidhi
+    title: { hinglish: "Phool, diya, dhoop aur aarti kaise", hi: "फूल, दीया, धूप और आरती" }
+    subtitle:
+      hinglish: Chhoti-chhoti baatein jo pooja ko sahi banati hain
+      hi: छोटी-छोटी बातें जो पूजा को सही बनाती हैं
+    blocks:
+      - label: { hinglish: Phool kaise chadhayein, hi: फूल कैसे चढ़ाएँ }
+      - list:
+          - hinglish: Daayein haath se — angutha, beech wali ungli aur anamika se pakad kar.
+            hi: दाएँ हाथ से — अँगूठा, मध्यमा और अनामिका से पकड़कर।
+          - hinglish: Phool ka khula mukh upar rahe; Mata ke charnon mein rakhein — murti ko chhue bina.
+            hi: फूल का खिला मुख ऊपर रहे; माता के चरणों में रखें — मूर्ति को छुए बिना।
+          - hinglish: Murjhaye, toote, zameen par gire ya soonghe hue phool na chadhayein. Tulsi Mata ko nahi chadhti.
+            hi: मुरझाए, टूटे, ज़मीन पर गिरे या सूँघे हुए फूल न चढ़ाएँ। तुलसी माता को नहीं चढ़ती।
+          - hinglish: Kal ke phool agle din hatayein — kachre mein nahi, gamle ya ped ki mitti mein.
+            hi: पिछले दिन के फूल अगले दिन हटाएँ — कूड़े में नहीं, गमले या पेड़ की मिट्टी में।
+      - label: { hinglish: Diya kaise jalayein, hi: दीया कैसे जलाएँ }
+      - list:
+          - hinglish: Gaay ke ghee ka diya, rui ki khadi (phool) batti.
+            hi: गाय के घी का दीया, रुई की खड़ी (फूल) बत्ती।
+          - hinglish: Mata ke daayein taraf (aapke baayein haath ki taraf); lau East ya North ki taraf.
+            hi: माता के दाईं ओर (आपके बाएँ हाथ की ओर); लौ पूर्व या उत्तर की ओर।
+          - hinglish: Akela jalta na chhodein. Bujhana ho to phoonk se nahi — haath se hawa karke ya phool se.
+            hi: अकेला जलता न छोड़ें। बुझाना हो तो फूँक से नहीं — हाथ से हवा करके या फूल से।
+      - label: { hinglish: Dhoopdaani mein goitha kaise jalayein, hi: धूपदानी में गोइठा (उपला) कैसे जलाएँ }
+      - ordered:
+          - hinglish: Dhoopdaani ko steel plate par rakhein; khidki thodi khuli rakhein.
+            hi: धूपदानी को धातु की थाली पर रखें; खिड़की थोड़ी खुली रखें।
+          - hinglish: Goithe ka chhota tukda (2–3 inch) dhoopdaani mein, upar kapoor ka tukda — maachis se jalayein.
+            hi: गोइठे (उपले) का छोटा टुकड़ा धूपदानी में, ऊपर कपूर का टुकड़ा — माचिस से जलाएँ।
+          - hinglish: Lau shaant hokar angaara ban jaaye, tab upar aadha chammach ghee aur thodi dhoop daalein.
+            hi: लौ शांत होकर अंगारा बन जाए, तब ऊपर आधा चम्मच घी और थोड़ी धूप डालें।
+          - hinglish: Mata ko 3 baar clockwise dhuaan dikhayein, phir side mein rakh dein. Agarbatti bhi isi tarah.
+            hi: माता को तीन बार दक्षिणावर्त (घड़ी की सुई की दिशा में) धुआँ दिखाएँ, फिर एक ओर रख दें। अगरबत्ती भी इसी तरह।
+      - label: { hinglish: Aarti kaise utaarein, hi: आरती कैसे उतारें }
+      - p: { hinglish: "Thali hamesha clockwise ghumayein:", hi: "थाली सदा दक्षिणावर्त घुमाएँ:" }
+      - list:
+          - { hinglish: 4 baar charnon par, hi: 4 बार चरणों पर }
+          - { hinglish: 2 baar naabhi par, hi: 2 बार नाभि पर }
+          - { hinglish: 1 baar mukh par, hi: 1 बार मुख पर }
+          - { hinglish: 7 baar poore swaroop par, hi: 7 बार पूरे स्वरूप पर }
+      - p:
+          hinglish: Aarti ke baad thali ke chaaron taraf thoda jal ghuma dein. Phir dono haath lau ke upar se laakar aankhon aur sir se lagayein.
+          hi: आरती के बाद थाली के चारों ओर थोड़ा जल घुमा दें। फिर दोनों हाथ लौ के ऊपर से लाकर आँखों और सिर से लगाएँ।

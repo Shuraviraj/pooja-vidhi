@@ -1,0 +1,29 @@
+day: 8
+tithi: { hinglish: Ashtami, hi: अष्टमी }
+name: { hinglish: Maa Mahagauri, hi: माँ महागौरी }
+stutiName: महागौरी
+color:
+  name: { hinglish: Purple, hi: बैंगनी }
+  hex: "#7B3FB0"
+  note: { hinglish: Purple / baingani kapde. Kala nahi., hi: बैंगनी वस्त्र। काले नहीं। }
+bhog: { hinglish: Roz wala hi, hi: रोज़ वाला ही }
+phool: { hinglish: Gende + safed phool, hi: गेंदे + सफ़ेद फूल }
+about:
+  hinglish: Atyant gaur varn, safed vastra, safed bail par sawar. Haath mein trishul aur damru. Shaanti aur pavitrata ki Devi.
+  hi: अत्यंत गौर वर्ण, श्वेत वस्त्र, श्वेत वृषभ पर सवार। हाथ में त्रिशूल और डमरू। शांति और पवित्रता की देवी।
+mool: ॐ देवी महागौर्यै नमः ॥
+dhyan:
+  - श्वेते वृषे समारूढा श्वेताम्बरधरा शुचिः ।
+  - महागौरी शुभं दद्यान्महादेवप्रमोददा ॥
+aarti: aarti-mahagauri
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam

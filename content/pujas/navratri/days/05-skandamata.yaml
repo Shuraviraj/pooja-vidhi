@@ -1,0 +1,29 @@
+day: 5
+tithi: { hinglish: Panchami, hi: पंचमी }
+name: { hinglish: Maa Skandamata, hi: माँ स्कंदमाता }
+stutiName: स्कन्दमाता
+color:
+  name: { hinglish: Yellow, hi: पीला }
+  hex: "#F2C318"
+  note: { hinglish: Peele kapde. Kala nahi., hi: पीले वस्त्र। काले नहीं। }
+bhog: { hinglish: Kela, hi: केला }
+phool: { hinglish: Peele gende, hi: पीले गेंदे }
+about:
+  hinglish: Kartikeya (Skand) ki maa — god mein baal Skand. Kamal par virajmaan, sher vahan. Mamta aur vatsalya ki Devi.
+  hi: कार्तिकेय (स्कंद) की माता — गोद में बाल स्कंद। कमल पर विराजमान, सिंह वाहन। ममता और वात्सल्य की देवी।
+mool: ॐ देवी स्कन्दमातायै नमः ॥
+dhyan:
+  - सिंहासनगता नित्यं पद्माश्रितकरद्वया ।
+  - शुभदास्तु सदा देवी स्कन्दमाता यशस्विनी ॥
+aarti: aarti-skandamata
+steps:
+  - use: diya
+  - use: shuddhi
+  - use: ganesh
+  - use: dhyan
+  - use: pooja
+  - use: jaap
+  - use: aarti
+  - use: pushpanjali
+  - use: kshama
+  - use: pranaam
