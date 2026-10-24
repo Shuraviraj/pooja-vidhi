@@ -516,6 +516,33 @@ app-listen { display: block; margin: 8px auto 14px; max-width: 520px; text-align
 .yt iframe { width: 100%; height: 100%; border: 0; display: block; }
 .listen-app { display: inline-block; margin-top: 6px; font-size: 0.78rem; color: var(--ink-soft); }
 
+.listen-lyrics {
+  display: block; margin-top: 10px; padding: 10px 14px; border: 1px dashed var(--saffron); border-radius: 12px;
+  color: var(--accent); font-weight: 600; font-size: 0.9rem; text-decoration: none; background: var(--surface);
+}
+
+/* Parivar page (/parivar/…) — password form + recording wale bol */
+.vault { display: grid; gap: 12px; max-width: 420px; margin: 8px auto 16px; }
+.vault p { margin: 0; color: var(--ink-soft); }
+.vault label { display: grid; gap: 4px; font-weight: 600; font-size: 0.9rem; }
+.vault input:not([type="checkbox"]) {
+  min-height: 48px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--bg); color: var(--ink); font: inherit; font-size: 1rem; /* 16px+ = iPhone zoom nahi karta */
+}
+.vault input:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.vault .check { display: flex; align-items: center; gap: 10px; font-weight: 400; }
+.vault .check input { width: 20px; height: 20px; accent-color: var(--accent); }
+.vault .btn:disabled { opacity: 0.7; }
+.vault-error { color: var(--warn-ink) !important; background: var(--warn-bg); padding: 8px 12px; border-radius: 10px; font-weight: 600; }
+/* Do sunehri lakeerein (thali jaisi) ke beech bol; har pad ke neeche halki lakeer */
+.parivar-bol {
+  border: 2px solid var(--gold); border-radius: 18px; padding: 16px 18px 6px;
+  background: var(--surface); box-shadow: inset 0 0 0 5px var(--surface), inset 0 0 0 6px var(--line);
+}
+.parivar-bol .verse { padding-bottom: 12px; border-bottom: 1px dashed var(--line); }
+.parivar-bol .verse.last { border-bottom: 0; }
+.link-btn { background: none; border: 0; padding: 10px; color: var(--ink-soft); font: inherit; text-decoration: underline; cursor: pointer; }
+
 /* Navratri page pe saari aartiyon ke link */
 .text-links { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; }
 .text-links a {

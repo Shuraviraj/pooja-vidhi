@@ -4,6 +4,7 @@ import { DayPage } from './pages/day';
 import { HomePage } from './pages/home';
 import { NavratriPage } from './pages/navratri';
 import { NotFoundPage } from './pages/not-found';
+import { ParivarPage } from './pages/parivar';
 import { TextPage } from './pages/text';
 
 // Dono languages ke same pages — sirf `data.lang` alag. Route ka data aur
@@ -14,6 +15,7 @@ const pages = (lang: Lang): Routes => [
   { path: 'navratri/:day', component: DayPage, data: { lang } },
   { path: 'aarti/:slug', component: TextPage, data: { lang, kind: 'aarti' } },
   { path: 'chalisa/:slug', component: TextPage, data: { lang, kind: 'chalisa' } },
+  { path: 'parivar/:slug', component: ParivarPage, data: { lang } },
 ];
 
 export const routes: Routes = [

@@ -14,6 +14,8 @@ export type PageSeo = {
   description?: string;
   /** Google results mein "Home › Navratri › …" dikhane ke liye (BreadcrumbList structured data). */
   crumbs?: { name: string; path: string }[];
+  /** Google pe na aaye (jaise parivar wala page). */
+  noindex?: boolean;
 };
 
 const SITE = content.site.url;
@@ -69,6 +71,9 @@ export function seo(compute: () => PageSeo | null) {
 
     title.setTitle(p.title);
     doc.documentElement.lang = htmlLang(p.lang);
+    // Ek page se doosre pe jaane pe (bina reload) pichhle page ka "noindex" na chipka rahe
+    if (p.noindex) meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+    else meta.removeTag('name="robots"');
     meta.updateTag({ name: 'description', content: description });
     meta.updateTag({ property: 'og:type', content: 'website' });
     meta.updateTag({ property: 'og:site_name', content: t(ui.siteName, p.lang) });

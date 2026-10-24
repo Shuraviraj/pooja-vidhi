@@ -74,6 +74,7 @@ import { TextBody } from './text-body';
                       [id]="yt.id"
                       [by]="yt.by"
                       [sameText]="yt.sameText"
+                      [lyricsHref]="yt.sameText ? undefined : link(lang(), '/parivar/' + text.slug)"
                       [title]="t(text.title, lang())"
                       [lang]="lang()"
                     />

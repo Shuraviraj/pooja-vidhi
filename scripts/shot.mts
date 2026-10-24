@@ -19,9 +19,11 @@ const { values, positionals } = parseArgs({
     h: { type: "string", default: "900" },
     open: { type: "string" }, // is id wale <details> tak scroll (saare details khule rehte hain)
     theme: { type: "string" }, // "diya" = dark mode
+    store: { type: "string", multiple: true }, // "key=value" — page khulne se pehle localStorage mein (jaise login yaad)
     out: { type: "string" },
   },
 });
+const storage = Object.fromEntries((values.store ?? []).map((s) => [s.slice(0, s.indexOf("=")), s.slice(s.indexOf("=") + 1)]));
 
 // Git Bash "/hi/..." ko "C:/Program Files/Git/hi/..." bana deta hai — wapas URL banao.
 const page = "/" + (positionals[0] ?? "").replace(/^[A-Za-z]:[\\/].*?Git[\\/]/, "").replace(/^\/+/, "");
@@ -38,9 +40,11 @@ const TYPES: Record<string, string> = {
 };
 
 const wrapper = `<!doctype html><meta charset="utf-8"><style>body{margin:0}iframe{border:0;display:block}</style>
-<iframe id="f" width="${values.w}" height="${values.h}" src="${page}"></iframe>
+<iframe id="f" width="${values.w}" height="${values.h}"></iframe>
 <script>
   const f = document.getElementById('f');
+  for (const [k, v] of Object.entries(${JSON.stringify(storage)})) localStorage.setItem(k, v);
+  f.src = ${JSON.stringify(page)};
   f.onload = () => setTimeout(() => {
     const d = f.contentDocument;
     d.querySelectorAll('details').forEach((x) => (x.open = true));

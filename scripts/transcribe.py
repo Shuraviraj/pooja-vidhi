@@ -38,8 +38,23 @@ def load_audio(path: str) -> np.ndarray:
             chunks += [f.to_ndarray() for f in resampler.resample(frame)]
     chunks += [f.to_ndarray() for f in resampler.resample(None)]
     return np.concatenate(chunks, axis=1).flatten().astype(np.float32) / 32768.0
-OUT = ROOT / "assets" / "transcripts"
+
+
+OUT = Path(os.environ.get("TRANSCRIPT_DIR", ROOT / "assets" / "transcripts"))
 MODEL = os.environ.get("WHISPER_MODEL", "large-v3")
+
+# File ke naam se Devi ka sahi naam — Whisper ko "hotwords" dete hain taaki naam sahi likhe
+# ("जैशल पूत्री" nahi, "जय शैलपुत्री").
+DEVI = {
+    "shail": "शैलपुत्री", "brahm": "ब्रह्मचारिणी", "chandra": "चंद्रघंटा", "kush": "कूष्मांडा",
+    "skand": "स्कंदमाता", "kath": "कात्यायनी", "katy": "कात्यायनी", "kaal": "कालरात्रि", "kal": "कालरात्रि",
+    "maha": "महागौरी", "siddh": "सिद्धिदात्री",
+}
+
+
+def hotwords(name: str) -> str:
+    devi = next((v for k, v in DEVI.items() if name.lower().startswith(k)), "दुर्गा")
+    return f"{devi} माँ मैया आरती जय"
 
 
 def main(files: list[str]) -> None:
@@ -58,6 +73,7 @@ def main(files: list[str]) -> None:
             condition_on_previous_text=False,  # ek line ki galti agli lines mein na faile
             hallucination_silence_threshold=2.0,  # lambe sirf-music hisse mein jo "sune" use chhodo
             word_timestamps=True,  # (hallucination_silence_threshold ke liye zaroori)
+            hotwords=hotwords(name),
         )
         lines = [f"[{s.start:6.1f}] {s.text.strip()}" for s in segments]
         (OUT / f"{name}.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")

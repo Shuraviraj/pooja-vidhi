@@ -1,5 +1,6 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 import type { Lang } from '../core/i18n';
 
 // "▶ Aarti suniye" — pehle sirf chhoti tasveer + button (page halka rahe, YouTube ka bhaari
@@ -9,6 +10,7 @@ import type { Lang } from '../core/i18n';
 
 @Component({
   selector: 'app-listen',
+  imports: [RouterLink],
   template: `
     @if (playing()) {
       <div class="yt">
@@ -41,6 +43,11 @@ import type { Lang } from '../core/i18n';
     <a class="listen-app" [href]="'https://www.youtube.com/watch?v=' + id()" target="_blank" rel="noopener">
       {{ hi() ? 'YouTube ऐप में खोलें ↗' : 'YouTube app mein kholein ↗' }}
     </a>
+    @if (lyricsHref(); as href) {
+      <a class="listen-lyrics" [routerLink]="href">
+        🔒 {{ by() ?? 'Recording' }} {{ hi() ? 'जी वाले बोल — परिवार के लिए' : 'ji wale bol — parivar ke liye' }} →
+      </a>
+    }
   `,
 })
 export class Listen {
@@ -51,6 +58,8 @@ export class Listen {
   readonly by = input<string>();
   /** Recording mein wahi bol hain jo page pe? Nahi to label saaf-saaf batata hai. */
   readonly sameText = input(true);
+  /** Recording wale bol ka (password wala) page — sirf jab bol alag hon. */
+  readonly lyricsHref = input<string>();
 
   private readonly sanitizer = inject(DomSanitizer);
   protected readonly playing = signal(false);

@@ -40,7 +40,14 @@ import { seo } from './seo';
         </p>
 
         @if (text.youtube; as yt) {
-          <app-listen [id]="yt.id" [by]="yt.by" [sameText]="yt.sameText" [title]="t(text.title, lang())" [lang]="lang()" />
+          <app-listen
+            [id]="yt.id"
+            [by]="yt.by"
+            [sameText]="yt.sameText"
+            [lyricsHref]="yt.sameText ? undefined : link(lang(), '/parivar/' + text.slug)"
+            [title]="t(text.title, lang())"
+            [lang]="lang()"
+          />
         }
 
         <app-text-body [text]="text" [lang]="lang()" />

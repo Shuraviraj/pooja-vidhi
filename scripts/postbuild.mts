@@ -18,6 +18,7 @@ const pages = fs
   .readdirSync(OUT, { recursive: true })
   .map((f) => String(f).replaceAll("\\", "/"))
   .filter((f) => f === "index.html" || f.endsWith("/index.html"))
+  .filter((f) => !/(^|\/)parivar\//.test(f)) // ghar wale (password) pages Google ko nahi batane
   .map((f) => `${site.url}/${f.replace(/index\.html$/, "")}`)
   .sort();
 

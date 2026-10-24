@@ -20,13 +20,23 @@ Update after every change: what got done, what's pending, what we learned. Newes
 - Search Console: verification file `public/google4f818588381b59bd.html` is live (**never delete it**). User: click Verify →
   Sitemaps → submit `sitemap.xml`.
 - Later (Claude): GitHub warns actions target Node 20 (deprecated) — bump action versions in deploy.yml when newer majors exist.
-- Say when to make the first git commit.
+- Parivar page: listen + fix misheard words in `private/aarti/*.txt`, then `npm run parivar` + push.
 
 **Next / ideas**
 - UI design phase — user reviews screen by screen and gives feedback.
 - Later: PWA/offline, 108-jaap counter, search, more poojas (Kali Pooja etc.).
 
 ## Log
+
+### 2026-10-24 (parivar page)
+- User wanted Anuradha Paudwal ke bol online. Public = copyright issue (credit ≠ permission), so: **password page for family**.
+  Aarti pages unchanged (traditional text) + "🔒 Anuradha Paudwal ji wale bol — parivar ke liye" link under the YouTube button
+  (aarti page + day-page sheet) → `/parivar/<slug>` (noindex, not in sitemap) → username/password → video + bol together.
+- Bol encrypted client-side (`core/vault.ts`: PBKDF2-SHA256 600k + AES-GCM) into `public/parivar.enc.json`; GitHub Pages can't
+  do real login, so the file is public but unreadable without the password. Login saved in gitignored `private/LOGIN.txt`.
+- Bol = Whisper re-run with `hotwords` (Devi naam) + mechanical cleanup (ॐ/जय/commas/junk). Words not hand-corrected (Claude
+  can't hear the audio) → page shows "Jaanch baaki" + note. Family can fix `private/aarti/<slug>.txt` → `npm run parivar`.
+- Ideas: Shemaroo permission email (then bol could go public with credit); Musixmatch contribution.
 
 ### 2026-10-24 (aarti audio + SEO)
 - User put 9 Anuradha Paudwal MP3s in `assets/` (gitignored with transcripts). Whisper large-v3 on GPU transcribed them

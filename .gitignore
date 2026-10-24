@@ -54,3 +54,6 @@ Thumbs.db
 *.m4a
 *.wav
 /assets/transcripts/
+
+# Parivar page ke khule bol + login (sirf is PC pe). GitHub pe sirf public/parivar.enc.json (taala-band) jaata hai.
+/private/
