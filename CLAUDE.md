@@ -38,5 +38,7 @@ Status, history and todo live in **docs/progress.md** — read it when you need 
 - Headless Edge fails silently from the Bash tool → use PowerShell. Its min window is ~500px → shot.mts uses an iframe.
 - `ng build` wipes `dist/pooja-vidhi/` (so don't keep temp files there). `npx serve` drops `?query` on `.html` redirects.
 - YAML flow lists: quote any line containing `,` or `:`.
+- `gh` lives at `/c/Program Files/GitHub CLI/gh.exe` (may not be on the Bash PATH). Pushing `.github/workflows/*` needs the
+  token's `workflow` scope (`gh auth refresh -s workflow`). Device login works from a background Bash: read the code from its output.
 - CSS `repeat(auto-fit, minmax(84px, 120px))` counts columns at the max → use `1fr` as max.
 - Hook: `.claude/settings.json` PostToolUse runs build-content after edits in `content/`, `public/art/`, schema — an exit-2 error means fix it now.
