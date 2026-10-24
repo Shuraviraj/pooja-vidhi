@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Shri Ganesh ji ki Aarti, hi: श्री गणेश जी की आरती }
+aka: ["Jai Ganesh Jai Ganesh Deva", "जय गणेश जय गणेश देवा", "Ganpati Aarti"]
+youtube: { id: "GKMSZ8SN0IA", sameText: true }
 subtitle: { hinglish: Har din aarti ki shuruaat isi se, hi: हर दिन आरती का आरंभ इसी से }
 refrain: जय गणेश जय गणेश जय गणेश देवा …
 parts:

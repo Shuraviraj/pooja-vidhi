@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Kushmanda ki Aarti, hi: माँ कूष्मांडा की आरती }
+aka: ["Kushmanda Mata ki Aarti", "Kooshmanda", "कूष्माण्डा माता की आरती"]
+youtube: { id: "M47b5qSNUSY", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 4, hi: नवरात्रि दिन 4 }
 parts:
   - verses:

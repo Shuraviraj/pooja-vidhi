@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Skandamata ki Aarti, hi: माँ स्कंदमाता की आरती }
+aka: ["Skandmata ki Aarti", "Skand Mata", "स्कंदमाता की आरती"]
+youtube: { id: "N8PY1BhHfow", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 5, hi: नवरात्रि दिन 5 }
 parts:
   - verses:

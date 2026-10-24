@@ -101,6 +101,8 @@ function resolveBlock(b: S.Block, ctx: Ctx): Block {
 const days: Day[] = list(`${dir}/days`).map((f) => {
   const day = load(`${dir}/days/${f}`, S.Day);
   const ctx: Ctx = { day, file: `content/${dir}/days/${f}` };
+  // Devi ki aarti ko uska din pata ho — aarti page pe "Din 9 ki poori vidhi →" link ke liye.
+  if (day.aarti && texts[day.aarti]) texts[day.aarti].day = { day: day.day, slug: `din-${day.day}`, name: day.name };
 
   const steps = day.steps.map((s) => {
     const base = "use" in s ? routine.steps[s.use] : s;

@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Brahmacharini ki Aarti, hi: माँ ब्रह्मचारिणी की आरती }
+aka: ["Brahmacharini Mata ki Aarti", "Brahmcharini", "ब्रह्मचारिणी माता की आरती"]
+youtube: { id: "Jz8dtHxh3Lc", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 2, hi: नवरात्रि दिन 2 }
 parts:
   - verses:

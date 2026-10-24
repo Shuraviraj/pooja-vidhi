@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Siddhidatri ki Aarti, hi: माँ सिद्धिदात्री की आरती }
+aka: ["Siddhidatri Mata ki Aarti", "Siddhidhatri", "सिद्धिदात्री माता की आरती"]
+youtube: { id: "B1kwLAbg4ns", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 9, hi: नवरात्रि दिन 9 }
 parts:
   - verses:

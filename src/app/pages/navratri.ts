@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { navratri } from '../core/content';
+import { content, navratri, textPath } from '../core/content';
 import { inkFor } from '../core/format';
 import { htmlLang, link, t, ui, type Lang } from '../core/i18n';
 import { Blocks } from '../components/blocks';
@@ -74,6 +74,15 @@ import { seo } from './seo';
         }
       </ul>
 
+      <h2>{{ lang() === 'hi' ? 'आरतियाँ और चालीसा' : 'Aartiyan aur Chalisa' }}</h2>
+      <ul class="text-links">
+        @for (e of texts; track e[0]) {
+          <li>
+            <a [routerLink]="link(lang(), textPath(e[0]))">{{ t(e[1].title, lang()) }}</a>
+          </li>
+        }
+      </ul>
+
       <div class="day-nav">
         <a class="btn btn-ghost" [routerLink]="link(lang(), '/chalisa/durga')">
           {{ lang() === 'hi' ? 'श्री दुर्गा चालीसा' : 'Shri Durga Chalisa' }}
@@ -87,6 +96,8 @@ export class NavratriPage {
   readonly lang = input.required<Lang>();
 
   protected readonly nav = navratri;
+  protected readonly texts = Object.entries(content.texts);
+  protected readonly textPath = textPath;
   protected readonly t = t;
   protected readonly ui = ui;
   protected readonly link = link;

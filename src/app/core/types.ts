@@ -40,6 +40,10 @@ export type Text = {
   status: Status;
   title: L;
   subtitle?: L;
+  aka?: string[];
+  youtube?: { id: string; by?: string; sameText: boolean };
+  /** Kis Navratri din ki Devi ki aarti hai (build-content bharta hai). */
+  day?: { day: number; slug: string; name: L };
   top?: string[];
   refrain?: string;
   parts: { heading?: string; numbered?: boolean; boxed?: boolean; verses: string[][] }[];

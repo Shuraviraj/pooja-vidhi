@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Shailputri ki Aarti, hi: माँ शैलपुत्री की आरती }
+aka: ["Shailputri Mata ki Aarti", "Shailaputri", "शैलपुत्री माता की आरती"]
+youtube: { id: "LiGe8iTyVnw", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 1, hi: नवरात्रि दिन 1 }
 parts:
   - verses:

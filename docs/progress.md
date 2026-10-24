@@ -12,10 +12,10 @@ Update after every change: what got done, what's pending, what we learned. Newes
 - Tooling: content-check hook, `npm run shot` screenshots, CLAUDE.md + this file.
 
 **Pending — user**
-- `status: draft` everywhere → proofread. **9 Devi aartis**: Claude can't listen to YouTube, so check against the Anuradha Paudwal recording.
-  Lines (couplet numbers) where the Drik Panchang/Bhakti Bharat text differs from ours and the exact word is unconfirmed:
-  Brahmacharini 3, 4, 5 · Kushmanda 5 (पहुँचाती?) · Skandamata 3, 9 · Katyayani 4, 5, 6, 8 · Mahagauri 1, 4 · Shailputri 5 (word order).
-  Siddhidatri matches the reference (spelling-only differences).
+- `status: draft` everywhere → proofread. The 9 Devi aartis on the site are the **traditional** texts (not the Anuradha
+  Paudwal album — that's a different, copyrighted 2021 composition; see log). To verify the traditional text, compare with a
+  printed pooja book (e.g. Gita Press). Lines that differ from Drik Panchang and are unconfirmed:
+  Brahmacharini 3, 4, 5 · Kushmanda 5 · Skandamata 3, 9 · Katyayani 4, 5, 6, 8 · Mahagauri 1, 4 · Shailputri 5.
 - ✅ Live: https://shuraviraj.github.io/pooja-vidhi/ (repo Shuraviraj/pooja-vidhi, public).
 - Search Console: verification file `public/google4f818588381b59bd.html` is live (**never delete it**). User: click Verify →
   Sitemaps → submit `sitemap.xml`.
@@ -27,6 +27,17 @@ Update after every change: what got done, what's pending, what we learned. Newes
 - Later: PWA/offline, 108-jaap counter, search, more poojas (Kali Pooja etc.).
 
 ## Log
+
+### 2026-10-24 (aarti audio + SEO)
+- User put 9 Anuradha Paudwal MP3s in `assets/` (gitignored with transcripts). Whisper large-v3 on GPU transcribed them
+  (`scripts/transcribe.py`; VAD off — singing over music isn't "speech"; own PyAV decoder — faster-whisper's breaks on av 19).
+- Finding: the recordings are the album "Nav Durga Aarti" (℗ 2021 Shemaroo, composer Sanjayraj Gaurinandan) — a **different
+  composition** ("ॐ जय शैलपुत्री माँ…"), copyrighted → NOT put on the site. Transcripts stay local for the family's own use.
+- "▶ Aarti suniye" (`components/listen.ts`): thumbnail button → youtube-nocookie player on tap, sticky while scrolling;
+  on aarti pages + inside day-page aarti sheets. Official videos for all 11 aartis; label says when the recording's words differ.
+- SEO: aarti titles in both scripts ("Maa Kalaratri ki Aarti (माँ कालरात्रि की आरती) — Lyrics"), description with the first line,
+  `aka:` alternate spellings shown on page, "Din 7 ki poori vidhi →" link, BreadcrumbList JSON-LD (aarti + day pages),
+  "Aartiyan aur Chalisa" link list on the Navratri page (internal links).
 
 ### 2026-10-24 (publish)
 - SEO: `seo()` per page (keyword titles, descriptions, canonical, hreflang hi-Latn/hi/x-default, og/twitter tags, `<html lang>`),

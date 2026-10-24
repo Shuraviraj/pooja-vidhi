@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Mahagauri ki Aarti, hi: माँ महागौरी की आरती }
+aka: ["Mahagauri Mata ki Aarti", "Maha Gauri", "महागौरी माता की आरती"]
+youtube: { id: "u1ukZAl_ZXo", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 8, hi: नवरात्रि दिन 8 }
 parts:
   - verses:

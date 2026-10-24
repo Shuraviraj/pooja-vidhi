@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Katyayani ki Aarti, hi: माँ कात्यायनी की आरती }
+aka: ["Katyayani Mata ki Aarti", "Katyayini", "कात्यायनी माता की आरती"]
+youtube: { id: "dGFpWzGSxJo", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 6, hi: नवरात्रि दिन 6 }
 parts:
   - verses:

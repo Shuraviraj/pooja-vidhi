@@ -3,6 +3,7 @@ import { content, textPath } from '../core/content';
 import { link, t, ui, type Lang } from '../core/i18n';
 import type { Block } from '../core/types';
 import { AartiSheet } from './aarti-sheet';
+import { Listen } from './listen';
 import { Mantra } from './mantra';
 import { Plate } from './plate';
 import { TextBody } from './text-body';
@@ -10,7 +11,7 @@ import { TextBody } from './text-body';
 /** Content ke har "block" (mantra, table, list, callout, thali…) ko HTML mein badalta hai. */
 @Component({
   selector: 'app-blocks',
-  imports: [AartiSheet, Mantra, Plate, TextBody],
+  imports: [AartiSheet, Listen, Mantra, Plate, TextBody],
   template: `
     @for (block of blocks(); track $index) {
       @switch (block.type) {
@@ -68,6 +69,15 @@ import { TextBody } from './text-body';
                   [closeLabel]="t(ui.close, lang())"
                   [fullLabel]="t(ui.fullPage, lang())"
                 >
+                  @if (text.youtube; as yt) {
+                    <app-listen
+                      [id]="yt.id"
+                      [by]="yt.by"
+                      [sameText]="yt.sameText"
+                      [title]="t(text.title, lang())"
+                      [lang]="lang()"
+                    />
+                  }
                   <app-text-body [text]="text" [lang]="lang()" />
                 </app-aarti-sheet>
               </li>

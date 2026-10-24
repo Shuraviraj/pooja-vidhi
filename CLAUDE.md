@@ -14,6 +14,9 @@ Status, history and todo live in **docs/progress.md** — read it when you need 
 - **Universal, not year-specific**: no dates/years anywhere. Tithi lives in each day file; sankalp keeps vaar blank (`______ (वार)`).
 - Keep it simple: no date-based features (the "Aaj" card was removed on request).
 - Every text/pooja has `status: draft` until the user tests it at home. `assets/*.pdf` = text source only, not a design spec.
+- **No copyrighted lyrics on the site.** Aarti text = traditional/public-domain versions only. Anuradha Paudwal's 9 Devi aartis
+  ("Nav Durga Aarti", ℗ 2021 Shemaroo, composer Sanjayraj Gaurinandan) are a different, copyrighted composition → we only
+  embed the official YouTube video (`youtube: {id, by, sameText: false}`), never transcribe it onto the page.
 
 ## Architecture
 `content/*.yaml` → `scripts/build-content.mts` (Zod check + resolve `$mool`/`$aarti`/`{tithi}`) → `src/generated/content.json`
@@ -23,13 +26,17 @@ Status, history and todo live in **docs/progress.md** — read it when you need 
 - `src/app/components/plate.ts` = round thali/chowki picture; items placed by `x`,`y`,`size` (%) from YAML; art = `public/art/<name>.svg`.
 - New block type checklist: `scripts/schema.mts` → `resolveBlock` in build-content → `core/types.ts` → `blocks.ts` `@case` → `src/styles.css`.
 - All styling in `src/styles.css` (tokens on top; Diya dark mode = `:root[data-theme="diya"]`).
-- SEO: every page calls `seo()` (`src/app/pages/seo.ts`) → title, description, canonical, hreflang, og tags. Live URL lives only in
+- SEO: every page calls `seo()` (`src/app/pages/seo.ts`) → title, description, canonical, hreflang, og tags, BreadcrumbList JSON-LD.
+  Aarti YAML `aka:` = alternate search spellings (shown on page); build-content links each Devi aarti to its day (`text.day`). Live URL lives only in
   `content/site.yaml` (canonical, sitemap, og:image). Live: https://shuraviraj.github.io/pooja-vidhi/ · repo Shuraviraj/pooja-vidhi.
 
 ## Commands
 - `npm start` (dev, :4200) · `npm run build` (content + ng build + postbuild) · `npm run content` (YAML check only)
 - `npm run shot -- /navratri --w 380 --open chowki [--theme diya]` → `dist/shots/*.png`. **Run via PowerShell tool**, after a build.
   Verify UI at 380 (phone) and 820 (tablet).
+- Transcribe aarti audio: `%USERPROFILE%\.whisper-venv\Scripts\python scripts\transcribe.py "assets\*.mp3"` (faster-whisper
+  large-v3 on the RTX 4070) → `assets/transcripts/*.txt`. MP3s + transcripts are **gitignored** (copyrighted recordings) —
+  never commit them. Whisper mishears sung Hindi: use transcripts as evidence, then correct with judgment.
 
 ## Gotchas (learned the hard way)
 - Angular 22 needs Node ≥ 24.15 (user is on nvm-windows 24.22.0; `nvm` only works in a real console).

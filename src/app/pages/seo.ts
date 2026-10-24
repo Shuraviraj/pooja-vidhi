@@ -12,6 +12,8 @@ export type PageSeo = {
   path: string;
   title: string;
   description?: string;
+  /** Google results mein "Home › Navratri › …" dikhane ke liye (BreadcrumbList structured data). */
+  crumbs?: { name: string; path: string }[];
 };
 
 const SITE = content.site.url;
@@ -43,6 +45,18 @@ export function seo(compute: () => PageSeo | null) {
     el.href = href;
   };
 
+  /** <script type="application/ld+json"> — Google ke liye page ki "structure" (JSON-LD). */
+  const setJsonLd = (data: object | null) => {
+    let el = doc.head.querySelector<HTMLScriptElement>('script[type="application/ld+json"]');
+    if (!data) return el?.remove();
+    if (!el) {
+      el = doc.createElement('script');
+      el.type = 'application/ld+json';
+      doc.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify(data);
+  };
+
   effect(() => {
     const p = compute();
     if (!p) {
@@ -69,5 +83,20 @@ export function seo(compute: () => PageSeo | null) {
     setLink('alternate', pageUrl('hinglish', p.path), 'hi-Latn');
     setLink('alternate', pageUrl('hi', p.path), 'hi');
     setLink('alternate', pageUrl('hinglish', p.path), 'x-default');
+
+    setJsonLd(
+      p.crumbs?.length
+        ? {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: p.crumbs.map((c, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: c.name,
+              item: pageUrl(p.lang, c.path),
+            })),
+          }
+        : null,
+    );
   });
 }

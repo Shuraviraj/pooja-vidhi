@@ -163,6 +163,11 @@ export class DayPage {
             ? `नवरात्रि दिन ${d.day}: ${name} की पूजा विधि, मंत्र, आरती | पूजा विधि`
             : `Navratri Din ${d.day}: ${name} ki Pooja Vidhi, Mantra, Aarti | Pooja Vidhi`,
         description: `${name} — ${t(d.about, lang)}`,
+        crumbs: [
+          { name: t(ui.siteName, lang), path: '/' },
+          { name: lang === 'hi' ? 'नवरात्रि' : 'Navratri', path: '/navratri' },
+          { name: `${t(ui.din, lang)} ${d.day}: ${name}`, path: `/navratri/${d.slug}` },
+        ],
       };
     });
   }

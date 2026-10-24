@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Shri Ambe ji ki Aarti, hi: श्री अम्बे जी की आरती }
+aka: ["Om Jai Ambe Gauri", "ॐ जय अम्बे गौरी", "Durga Maa ki Aarti", "दुर्गा माँ की आरती"]
+youtube: { id: "RY1jmTTjvhI", by: Anuradha Paudwal, sameText: true }
 subtitle:
   hinglish: Durga ji ki aarti · har pankti ke baad “ॐ जय अम्बे गौरी”
   hi: दुर्गा जी की आरती · हर पंक्ति के बाद “ॐ जय अम्बे गौरी”

@@ -48,3 +48,9 @@ Thumbs.db
 
 # claude code local settings
 .claude/settings.local.json
+
+# Audio recordings (copyrighted) aur unke transcripts — kabhi public repo mein nahi
+*.mp3
+*.m4a
+*.wav
+/assets/transcripts/

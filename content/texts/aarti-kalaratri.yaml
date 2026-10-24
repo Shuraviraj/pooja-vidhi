@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Kalaratri ki Aarti, hi: माँ कालरात्रि की आरती }
+aka: ["Kalratri Mata ki Aarti", "Kaalratri", "कालरात्रि माता की आरती"]
+youtube: { id: "e-0JyqO0riQ", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 7, hi: नवरात्रि दिन 7 }
 parts:
   - verses:

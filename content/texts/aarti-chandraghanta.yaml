@@ -1,6 +1,8 @@
 kind: aarti
 status: draft
 title: { hinglish: Maa Chandraghanta ki Aarti, hi: माँ चंद्रघंटा की आरती }
+aka: ["Chandraghanta Mata ki Aarti", "Chandrghanta", "चन्द्रघण्टा माता की आरती"]
+youtube: { id: "qQ_3XWmVcgI", by: Anuradha Paudwal, sameText: false }
 subtitle: { hinglish: Navratri Din 3, hi: नवरात्रि दिन 3 }
 parts:
   - verses:

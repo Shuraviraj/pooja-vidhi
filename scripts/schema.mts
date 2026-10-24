@@ -79,6 +79,20 @@ export const Text = z
     kind: z.enum(["aarti", "chalisa"]),
     title: L,
     subtitle: L.optional(),
+    /** Doosre naam/spelling jinse log Google pe dhoondhte hain (jaise Kalratri, Kaalratri) — page pe dikhte hain. */
+    aka: z.array(z.string().min(1)).optional(),
+    /**
+     * Page pe "▶ Suniye" player — sirf official channel ka video.
+     * sameText: kya recording mein wahi bol hain jo page pe? (false = alag rachna, bol copyright — page pe mat likho)
+     */
+    youtube: z
+      .object({
+        id: z.string().regex(/^[\w-]{11}$/, "YouTube video id 11 akshar ka hota hai (watch?v= ke baad wala)"),
+        by: z.string().optional(),
+        sameText: z.boolean(),
+      })
+      .strict()
+      .optional(),
     status: Status,
     top: z.array(z.string()).optional(),
     refrain: z.string().optional(),
