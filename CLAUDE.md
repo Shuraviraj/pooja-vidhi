@@ -40,5 +40,7 @@ Status, history and todo live in **docs/progress.md** — read it when you need 
 - YAML flow lists: quote any line containing `,` or `:`.
 - `gh` lives at `/c/Program Files/GitHub CLI/gh.exe` (may not be on the Bash PATH). Pushing `.github/workflows/*` needs the
   token's `workflow` scope (`gh auth refresh -s workflow`). Device login works from a background Bash: read the code from its output.
+- Pages was enabled on an empty repo → `github-pages` environment allowed only `master`; we added a `main` branch policy.
+  Deploy = push to `main` → Actions (~2 min). Check: `gh run list -R Shuraviraj/pooja-vidhi -L 1`.
 - CSS `repeat(auto-fit, minmax(84px, 120px))` counts columns at the max → use `1fr` as max.
 - Hook: `.claude/settings.json` PostToolUse runs build-content after edits in `content/`, `public/art/`, schema — an exit-2 error means fix it now.

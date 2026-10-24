@@ -16,7 +16,9 @@ Update after every change: what got done, what's pending, what we learned. Newes
   Lines (couplet numbers) where the Drik Panchang/Bhakti Bharat text differs from ours and the exact word is unconfirmed:
   Brahmacharini 3, 4, 5 · Kushmanda 5 (पहुँचाती?) · Skandamata 3, 9 · Katyayani 4, 5, 6, 8 · Mahagauri 1, 4 · Shailputri 5 (word order).
   Siddhidatri matches the reference (spelling-only differences).
-- Deploy: `gh` is installed (2.103.2) → run `gh auth login` once and restart Claude Code (so it's on PATH); then Claude can create the repo, push and enable Pages.
+- ✅ Live: https://shuraviraj.github.io/pooja-vidhi/ (repo Shuraviraj/pooja-vidhi, public). Optional: Google Search Console
+  verify + submit `sitemap.xml` so Google indexes faster.
+- Later (Claude): GitHub warns actions target Node 20 (deprecated) — bump action versions in deploy.yml when newer majors exist.
 - Say when to make the first git commit.
 
 **Next / ideas**
